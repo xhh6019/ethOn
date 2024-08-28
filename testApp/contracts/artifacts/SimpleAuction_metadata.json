@@ -148,7 +148,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/simpleAuction.sol": "SimpleAuction"
+			"testApp/contracts/simpleAuction.sol": "SimpleAuction"
 		},
 		"evmVersion": "byzantium",
 		"libraries": {},
@@ -159,7 +159,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/simpleAuction.sol": {
+		"testApp/contracts/simpleAuction.sol": {
 			"keccak256": "0xdb20c10ddde59f9bfaa0905d9be6021960ec3279eb2290e2c71516652d53ba89",
 			"urls": [
 				"bzzr://fbfe86c1a0def671e0860742928aed548559f06f3659044de399f646ce8f4069"
