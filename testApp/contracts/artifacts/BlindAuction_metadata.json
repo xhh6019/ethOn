@@ -1,0 +1,251 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "bids",
+				"outputs": [
+					{
+						"name": "blindedBid",
+						"type": "bytes32"
+					},
+					{
+						"name": "deposit",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "ended",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "auctionEnd",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "beneficiary",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "biddingEnd",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_values",
+						"type": "uint256[]"
+					},
+					{
+						"name": "_fake",
+						"type": "bool[]"
+					},
+					{
+						"name": "_secret",
+						"type": "bytes32[]"
+					}
+				],
+				"name": "reveal",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "highestBidder",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_blindedBid",
+						"type": "bytes32"
+					}
+				],
+				"name": "bid",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "revealEnd",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "highestBid",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_biddingTime",
+						"type": "uint256"
+					},
+					{
+						"name": "_revealTime",
+						"type": "uint256"
+					},
+					{
+						"name": "_beneficiary",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "winner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "highestBid",
+						"type": "uint256"
+					}
+				],
+				"name": "AuctionEnded",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {
+				"auctionEnd()": {
+					"notice": "结束拍卖，并把最高的出价发送给受益人"
+				},
+				"bid(bytes32)": {
+					"notice": "同一个地址可以放置多个出价。"
+				},
+				"reveal(uint256[],bool[],bytes32[])": {
+					"notice": "对于所有正确披露的无效出价以及除最高出价以外的所有出价，你都将获得退款。"
+				},
+				"withdraw()": {
+					"notice": "取回出价（当该出价已被超越）"
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"testApp/contracts/BlindAuction.sol": "BlindAuction"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"testApp/contracts/BlindAuction.sol": {
+			"keccak256": "0xef4b8c6a8020cb975e9fe7d324ad721ac5760900e6600b8a79b522b390089c82",
+			"urls": [
+				"bzzr://ca6426e8f87213ad1cb55df54621a4ba7b1790aa46caa811b8bff8a42e73bef3"
+			]
+		}
+	},
+	"version": 1
+}
