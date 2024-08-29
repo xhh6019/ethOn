@@ -43,7 +43,7 @@ contract BlindAuction {
         onlyBefore(biddingEnd)
 
     {
-        bidInter(value, fake, secret);
+        bidInter(keccak256(value, fake, secret));
     }
 
     /// 可以通过 `_blindedBid` = keccak256(value, fake, secret)

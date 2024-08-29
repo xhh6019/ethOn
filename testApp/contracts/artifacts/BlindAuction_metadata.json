@@ -115,6 +115,28 @@
 				"type": "function"
 			},
 			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"name": "fake",
+						"type": "bool"
+					},
+					{
+						"name": "secret",
+						"type": "bytes32"
+					}
+				],
+				"name": "bid",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
 				"constant": true,
 				"inputs": [],
 				"name": "highestBidder",
@@ -126,20 +148,6 @@
 				],
 				"payable": false,
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"constant": false,
-				"inputs": [
-					{
-						"name": "_blindedBid",
-						"type": "bytes32"
-					}
-				],
-				"name": "bid",
-				"outputs": [],
-				"payable": true,
-				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -215,9 +223,6 @@
 				"auctionEnd()": {
 					"notice": "结束拍卖，并把最高的出价发送给受益人"
 				},
-				"bid(bytes32)": {
-					"notice": "同一个地址可以放置多个出价。"
-				},
 				"reveal(uint256[],bool[],bytes32[])": {
 					"notice": "对于所有正确披露的无效出价以及除最高出价以外的所有出价，你都将获得退款。"
 				},
@@ -241,9 +246,9 @@
 	},
 	"sources": {
 		"testApp/contracts/BlindAuction.sol": {
-			"keccak256": "0xef4b8c6a8020cb975e9fe7d324ad721ac5760900e6600b8a79b522b390089c82",
+			"keccak256": "0x9e9fa0eef7c23e11ad1979018793290a28eb42853d0313a104b627a1712da505",
 			"urls": [
-				"bzzr://ca6426e8f87213ad1cb55df54621a4ba7b1790aa46caa811b8bff8a42e73bef3"
+				"bzzr://f3a3c8ff93ae53da6afd37f4c4c578709ac91926c3b2fa0eda558df2fa8c42e8"
 			]
 		}
 	},
