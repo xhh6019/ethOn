@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"name": "fake",
+						"type": "bool"
+					},
+					{
+						"name": "secret",
+						"type": "bytes32"
+					}
+				],
+				"name": "myKeccak256",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"testApp/contracts/test.sol": "Keccak256Example"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"testApp/contracts/test.sol": {
+			"keccak256": "0x504e9f4415fb3c224edef05c198c389908c6c1f147bd2971307f526d86758d76",
+			"urls": [
+				"bzzr://8f4b0585220b36f95c72ea8196e366e6f8ac739e93dfdd0438f927b0f37b186c"
+			]
+		}
+	},
+	"version": 1
+}
