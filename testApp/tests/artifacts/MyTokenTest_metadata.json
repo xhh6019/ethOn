@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "f",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "testTokenInitialValues",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"testApp/tests/MyToken_test.sol": "MyTokenTest"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"remix_tests.sol": {
+			"keccak256": "0xe2783cdc204cba8c72494119339f1d90f9022b15d6c718c668b7f097d8e29787",
+			"urls": [
+				"bzzr://cfd77e0ea2b0d86dc68ac80b1693ae358a9f2972edb9fd5552bd33960715a5ff"
+			]
+		},
+		"testApp/contracts/CrowdFunding.sol": {
+			"keccak256": "0x3e61a27c61361b76797f3ccba3692c3dccfafac4cca9b71ea9985b4595fa4172",
+			"urls": [
+				"bzzr://144b975fbcaff6fd9bd3d6c28472cd6407953d7a2f9f6daf55ab64e7184d7b8a"
+			]
+		},
+		"testApp/tests/MyToken_test.sol": {
+			"keccak256": "0x120fa6fbedcd60936eb4d673fdc366a9ab57ec2e40868bd0dc287af36f63cd69",
+			"urls": [
+				"bzzr://f8e78a11668425a653467d50c67e06fe1c133ec6f4741cb1929c4afdce461e8b"
+			]
+		}
+	},
+	"version": 1
+}

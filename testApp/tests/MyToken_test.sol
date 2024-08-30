@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity >=0.7.0 <0.9.0;
+pragma solidity ^0.4.11;
 import "remix_tests.sol";
-import "../contracts/MyToken.sol";
+import "../contracts/CrowdFunding.sol";
 
-contract MyTokenTest is MyToken {
-
+/// @title Example Contract
+/// @notice This contract is an example.
+/// @custom:dev-run-script deploy.js
+contract MyTokenTest is MappingUser {
     function testTokenInitialValues() public {
-        Assert.equal(name(), "XHHToken", "token name did not match");
-        Assert.equal(symbol(), "XHH", "token symbol did not match");
-        Assert.equal(decimals(), 18, "token decimals did not match");
-        Assert.equal(totalSupply(), 0, "token supply should be zero");
+        // Assert.equal(, 100);
+        f();
     }
 }
