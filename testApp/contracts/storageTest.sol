@@ -20,6 +20,10 @@ contract C {
 
         g(x); // 调用 g 函数，同时移交对 x 的引用
         h(x); // 调用 h 函数，同时在 memory 中创建一个独立的临时拷贝
+        uint[] memory a = new uint[](7);
+        //uint[] memory b = new uint[];
+        bool[2][] m_pairsOfFlags;
+        bool[][2] m_pairsOfFlags2;
     }
 
     function g(uint[] storage storageArray) internal {}

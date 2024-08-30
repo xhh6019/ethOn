@@ -6,28 +6,33 @@
 	"output": {
 		"abi": [
 			{
-				"constant": false,
+				"constant": true,
 				"inputs": [
 					{
-						"name": "memoryArray",
-						"type": "uint256[]"
+						"name": "",
+						"type": "address"
 					}
 				],
-				"name": "h",
-				"outputs": [],
+				"name": "balances",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
 				"payable": false,
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"constant": false,
 				"inputs": [
 					{
-						"name": "memoryArray",
-						"type": "uint256[]"
+						"name": "newBalance",
+						"type": "uint256"
 					}
 				],
-				"name": "f",
+				"name": "update",
 				"outputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
@@ -43,7 +48,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"testApp/contracts/storageTest.sol": "C"
+			"testApp/contracts/CrowdFunding.sol": "MappingExample"
 		},
 		"evmVersion": "byzantium",
 		"libraries": {},
@@ -54,10 +59,10 @@
 		"remappings": []
 	},
 	"sources": {
-		"testApp/contracts/storageTest.sol": {
-			"keccak256": "0x46b14af516a894225ae47e8702ff0ae43e2af7f38c5c04d415a5085c55e2eb90",
+		"testApp/contracts/CrowdFunding.sol": {
+			"keccak256": "0x3e61a27c61361b76797f3ccba3692c3dccfafac4cca9b71ea9985b4595fa4172",
 			"urls": [
-				"bzzr://119ae50f22bae9e3ec9c8c1c01e4ad571e848e9de27b704e1a1fcd9dbc7a297b"
+				"bzzr://144b975fbcaff6fd9bd3d6c28472cd6407953d7a2f9f6daf55ab64e7184d7b8a"
 			]
 		}
 	},

@@ -1,0 +1,93 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "campaignID",
+						"type": "uint256"
+					}
+				],
+				"name": "checkGoalReached",
+				"outputs": [
+					{
+						"name": "reached",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "campaignID",
+						"type": "uint256"
+					}
+				],
+				"name": "contribute",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "beneficiary",
+						"type": "address"
+					},
+					{
+						"name": "goal",
+						"type": "uint256"
+					}
+				],
+				"name": "newCampaign",
+				"outputs": [
+					{
+						"name": "campaignID",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"testApp/contracts/CrowdFunding.sol": "CrowdFunding"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"testApp/contracts/CrowdFunding.sol": {
+			"keccak256": "0x3e61a27c61361b76797f3ccba3692c3dccfafac4cca9b71ea9985b4595fa4172",
+			"urls": [
+				"bzzr://144b975fbcaff6fd9bd3d6c28472cd6407953d7a2f9f6daf55ab64e7184d7b8a"
+			]
+		}
+	},
+	"version": 1
+}
