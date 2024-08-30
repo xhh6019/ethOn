@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "memoryArray",
+						"type": "uint256[]"
+					}
+				],
+				"name": "h",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "memoryArray",
+						"type": "uint256[]"
+					}
+				],
+				"name": "f",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"testApp/contracts/storageTest.sol": "C"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"testApp/contracts/storageTest.sol": {
+			"keccak256": "0xee972fa66f84d89fa4911d8b5a2cba5b9f39f4368083f8120d84e38408430785",
+			"urls": [
+				"bzzr://1cfb3e7fc0c23beffa22796c3e988b8790bd51d3c67d995c60f52fb4c4d3d84e"
+			]
+		}
+	},
+	"version": 1
+}
